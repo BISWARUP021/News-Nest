@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Nest</title>
+    <link rel="stylesheet" href="./news.css" />
+    <link rel="stylesheet" href="./newsUtilityClasses.css" />
+    <script src="https://kit.fontawesome.com/f694d758b6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation bar -->
+        <div class="nav-bar">
+            <div class="logo-box" id="logo-box">
+                <img src="./news-nest-low-resolution-logo-color-on-transparent-background.png" alt="" />
+            </div>
+            <div class="nav-list-box">
+                <ul class="nav-lists">
+                    <li class="item-category">
+                        <a href="#">Categories</a>
+                        <div class="sub-lists-box">
+                            <ul class="sub-lists">
+                                <li id="category-technology" onclick="onNavItemClick('Technology')"><a href="#">Technology</a>
+                                </li>
+                                <li id="category-sports" onclick="onNavItemClick('Sports')"><a href="#">Sports</a></li>
+                                <li id="category-nature" onclick="onNavItemClick('Nature')"><a href="#">Nature</a></li>
+                                <li id="category-Science" onclick="onNavItemClick('Science')"><a href="#">Science</a>
+                                </li>
+                                <li id="category-Education" onclick="onNavItemClick('Education')"><a
+                                        href="#">Education</a></li>
+                                <li id="category-Space" onclick="onNavItemClick('Space')"><a href="#">Space</a></li>
+                                <li id="category-Business" onclick="onNavItemClick('Business')"><a href="#">Business</a>
+                                </li>
+                                <li id="category-Economics" onclick="onNavItemClick('Economics')"><a
+                                        href="#">Economics</a></li>
+                                <li id="category-Current Affairs" onclick="onNavItemClick('Current Affairs')"><a
+                                        href="#">Current Affairs</a></li>
+                                <li id="category-Lifestyle" onclick="onNavItemClick('Lifestyle')"><a
+                                        href="#">Lifestyle</a></li>
+                                <li id="category-Trade & Professional" onclick="onNavItemClick('Trade & Professional')">
+                                    <a href="#">Trade & Professional</a>
+                                </li>
+                                <li id="category-UK Media" onclick="onNavItemClick('UK Media')"><a href="#">UK Media</a>
+                                </li>
+                                <li id="category-US Media" onclick="onNavItemClick('US Media')"><a href="#">US Media</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="home"><a href="#">Home</a></li>
+                    <li><a href="#footer-section">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="search-box">
+                <form action="">
+                    <input type="text" id="search-input" placeholder="Search Here" />
+                    <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+
+        </div>
+
+
+        <div class="heading">
+            <h1 id="heading">Search results on 'India'</h1>
+        </div>
+        
+
+
+        <!-- Cards container -->
+        <div class="cards-container" id="cards-container">
+            
+
+        </div>
+        <template id="template-news-card">
+        
+            <div class="card">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./messi.jpg" id="news-image" />
+                    </div>
+                    <div class="card-content">
+                        <h2 id="news-title">This is the title</h2>
+                        <h6 id="news-source">BBC News 08/09/2023</h6>
+                        <p id="news-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                            cupiditate itaque deserunt? Delectus suscipit asperiores omnis
+                            non, enim corrupti ipsa.
+                        </p>
+                    </div>
+                </div>
+        </template>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-section" id="footer-section">
+          <div class="footer-box">
+            <h3>BISWARUP GOSWAMI</h3>
+            <p>
+              Hello I am Biswarup Goswami. I've created this news website.
+              I am a web developer with a strong passion for creating innovative and visually stunning websites.
+                 
+            </p>
+          </div>
+          <div class="footer-box" id="footer-box-1">
+            <h3>CONTACT</h3>
+            <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <p>biswarupofficial23@gmail.com</p>
+            </div>
+            <div class="phone-number">
+                <i class="fa-solid fa-phone" style="color: #b3b3b3;"></i>
+                <p>8420450976</p>
+            </div>
+            <div class="address">
+                <i class="fa-solid fa-house"></i>
+                <p>West Bengal India</p>
+            </div>
+            
+            
+            
+             <div class="social-medias">
+                <a class="footer-logo" href="https://www.linkedin.com/in/biswarup-goswami-b5a233232/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="footer-logo" href="https://www.facebook.com/ravenzilos001/"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer-logo" href="https://www.instagram.com/biswarup.g_21/"><i class="fa-brands fa-instagram"></i></a>
+             </div>
+            
+          </div>
+          <div class="footer-box">
+            <h3>PRIVACY POLICY</h3>
+            <p>
+              Copyright © 2023 by Biswarup Goswami.
+              All rights reserved. Privacy Policy.</p
+            >
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="./news.js"></script>
+</body>
+
+</html>

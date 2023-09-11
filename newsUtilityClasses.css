@@ -1,0 +1,26 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    background-color: #212121;
+}
+a{
+    
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-lists li{
+    list-style: none;
+    width: 110px;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+
+}
